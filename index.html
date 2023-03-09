@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+  <main class="card">
+    <h1 class="card-title">Registeration Form</h1>
+    <hr class="underline">
+    <form action="" method="" class="form" id="form">
+      <div class=" form-control">
+        <label for="username">Username</label>
+        <input class="input"
+         type="text" 
+        class="username" 
+        id="username"
+         placeholder="Enter Name">
+        <small class="small">Username is required</small>
+
+      </div>
+
+      <div class=" form-control">
+        <label for="email">Email</label>
+        <input class="input"
+         type="email" class="email" 
+         id="email" 
+         placeholder="Enter  Email Address">
+        <small class="small">Email is required</small>
+
+      </div>
+
+      <div class=" form-control">
+        <label for="password">Password</label>
+        <input class="input" 
+        type="password"
+         class="password" 
+         id="password" 
+         placeholder="Enter Password">
+        <small class="small">Password is invalid</small>
+
+      </div>
+
+      <div class=" form-control ">
+        <label for="confirm-password">Confirm-Password</label>
+        <input class="input error" 
+        type="password" 
+        class="confirm-password " 
+        id="confirm-password"
+          placeholder="Enter Password again">
+        <small class="small"> confirm-password not matched to password</small>
+
+      </div>
+
+      <button type="submit" class="btn-submit" id="btn-submit">Submit</button>
+    </form>
+
+  </main>
+  <!-- custom js -->
+  <script src="./script.js"></script>
+</body>
+
+</html>

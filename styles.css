@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-noto-sans: "Noto Sans", sans-serif;
+ --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --max-width: 1170px;
+  --fixed-width: 450px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-roboto);
+}
+
+/* global styles */
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+/* section */
+.section,
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+/* custom css */
+
+body {
+  background-color: lemonchiffon;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 24rem;
+  background-color: blue;
+  padding: 1.5rem;
+  border: 10px solid black;
+  border-radius: 1rem;
+
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.card-title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.input {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+  background-color: whitesmoke;
+  color: black;
+  margin: 0.25rem;
+}
+.input::placeholder {
+  color: black;
+}
+.btn-submit {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: lightgreen;
+  border-radius: 1rem;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.btn-submit:hover {
+  transform: translateY(10px);
+  cursor: pointer;
+}
+.form-control small {
+  color: red;
+  font-size: 0.8rem;
+  visibility: hidden;
+}
+.form-control.error small {
+  visibility: visible;
+}
+.form-control.error Input {
+  border-color: red;
+}
+.form-control.success Input {
+  border-color: green;
+}
